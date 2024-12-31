@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Voice of the People"
+    },
+    "motivations": {
+      "@value": "We are living in a period of time were \"democratic\" countries are becoming less and less democratic, moments were people's opinions are muted as long as they match with the ones \"on the top\". Here, in Cardano ecosystem, we have an option to have our say. It's time to use it. "
+    },
+    "objectives": {
+      "@value": "In an ideal world, every stakeholder would represent and vote for themselves, but this requires time and understanding of the protocol. I'm here for those that doesn't have or doesn't want to invest time in understanding the future proposals.  No Lovelace without a say. "
+    },
+    "paymentAddress": {
+      "@value": "addr1q9lphcpxt3cmtfmr9l4d5z24ac6f352kshnu37p2759exv8x7y7hxsxlngjlkcqemxqk32ryprhcrx26h69ahaf7sxqqjhw7at"
+    },
+    "qualifications": {
+      "@value": "Empty"
+    },
+    "references": [
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "GitHub"
+        },
+        "uri": {
+          "@value": "https://github.com/DRepVoiceOfThePeople"
+        }
+      }
+    ]
+  }
+}
