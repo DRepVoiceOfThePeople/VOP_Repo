@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: YES on \"Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure — IO Research\"\n\nRationale:\n\nCardano's core competitive advantage is its research-driven approach. Without continued investment in consensus evolution (Leios/Peras), post-quantum cryptography, ZK infrastructure, and formal methods, Cardano loses the one differentiator that justifies its existence alongside faster, cheaper L1s. This is not optional spending — it is what makes Cardano Cardano.\n\nCV25 delivered above targets (20% overperformance), produced 24 peer-reviewed papers, and advanced Leios, Peras, Cavefish, and ZK verification from theory to prototype. The track record supports continued funding.\n\nI am voting Yes because rejecting this proposal would inflict more damage on the ecosystem than approving it with reservations.\n\nHowever, this Yes vote comes with serious criticism on two fronts:\n\n1. The proposal should have been split. The community asked for it. Multiple DReps asked for it. A $7.9M monolithic proposal covering 7 work packages forces an all-or-nothing decision that does not serve good governance. DReps who see clear value in post-quantum research but question the ROI of WP7 dissemination activities, for example, are forced to accept both or reject both. This is a structural failure of the proposal, not of the DReps voting No.\n\n2. Charles Hoskinson's public response has been counterproductive. Threatening not to resubmit, warning of permanent ADA price damage, and criticizing DReps who vote No or Abstain is not how you build consensus in a decentralized governance system. A founder who responds to legitimate scrutiny with emotional pressure undermines the very governance model Cardano claims to champion. The community is not obligated to approve proposals out of fear. IO should listen to the feedback, split future proposals into independently votable components, and let each stand on its own merit.\n\nFor 2027, I expect IO Research proposals to be modular, independently votable, and responsive to DRep feedback. The research is essential. The governance approach around it needs to mature."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
