@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: YES on \"The first node in the browser; a Cardano USP\" (Gerolamo) — HLabs\n\nRationale:\n\nGerolamo targets a capability that no other major L1 can replicate without redesigning its base layer. Cardano's eUTxO model, bounded block sizes, and deterministic Plutus execution make an in-browser fully-validating node technically viable here in a way it is not on Ethereum, Solana, or any account-based chain. If shipped, this becomes a concrete, demonstrable competitive advantage — not a whitepaper claim.\n\nThe engineering work required (succinct validation, compact checkpointing, embeddable verifiers) directly feeds into components Cardano needs anyway for trustless bridges and L2 infrastructure. Funding Gerolamo is funding that foundation.\n\nI voted No on the previous bundled HLabs proposal (Pebble + Gerolamo). This proposal addresses that concern: the scope has been deliberately separated, and Gerolamo stands on its own merit with a focused 5-FTE, $1M budget that excludes block production and non-essential overhead.\n\nThe governance structure is among the strongest I have seen in any treasury proposal:\n\n- Smart contract escrow (SundaeSwap treasury contracts, audited by TxPipe and MLabs)\n- Independent oversight board (Carmuega, Rosa, Gianelloni) with pause authority\n- Milestone-based disbursement with objective, publicly verifiable acceptance criteria\n- Independent quarterly financial audit\n- Automatic failsafe sweep of unused funds back to treasury\n\nAt ₳4,600,000 for 12 months and 5 FTEs, the cost is contained and the contingency buffer (15%, refundable) reflects lessons learned from prior proposals affected by ADA price volatility.\n\nThis is infrastructure that compounds: every wallet and dApp that integrates Gerolamo inherits trustless chain access. That is the kind of investment the treasury should be making."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
