@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Vote: YES on Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026–2028\n\nRationale:\n\nPeras is critical infrastructure for Cardano's consensus layer. Letting Tweag's delivery stall would directly harm the Leios roadmap and, by extension, Cardano's long-term scalability. The practical cost of voting No — losing a specialized engineering team mid-delivery — outweighs the principled objection to covering currency risk with treasury funds.\n\nThat said, this Yes vote comes with a clear expectation for future proposals:\n\n1. No more ADA-denominated contracts without hedging mechanisms. All future treasury-funded engagements above a reasonable threshold should be denominated in stablecoins (USDCx, USDM) or include contractual volatility buffers. The treasury is not an insurance policy against ADA price fluctuations.\n\n2. Milestone-based disbursement tied to deliverables, not lump sums released upfront. Tweag themselves acknowledged that receiving payment in milestones was part of the problem — this should become the standard, not the exception.\n\n3. Transparent cost breakdowns per workstream. DReps need to see FTE counts, burn rates, and delivered-vs-paused scope before approving supplementary requests. A shortfall claim without auditable numbers is not sufficient.\n\nThis vote is not an endorsement of the funding structure. It is a pragmatic decision to protect ongoing critical work while demanding that the governance process prevents this situation from recurring."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
