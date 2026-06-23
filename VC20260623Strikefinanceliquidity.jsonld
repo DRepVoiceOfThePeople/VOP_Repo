@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "This is not a proposal I fundamentally oppose. Strike Finance has demonstrated real traction, the liquidity flywheel thesis is sound, and Cardano-native stablecoins and derivatives infrastructure are necessary for long-term ecosystem competitiveness.\n\nHowever, the timing is wrong. We are in a bear market cycle where USDM depeg risk is materially elevated. Deploying 9,000,000 ADA of treasury capital into a stablecoin position — at a moment when stablecoin liquidity on Cardano is still shallow and under stress — introduces a risk profile that is inappropriate for treasury funds at this stage of the cycle. A depeg event under current conditions is a plausible scenario, not a tail risk.\n\nI would reconsider a productive treasury deployment of this kind in a future cycle, when Cardano-native stablecoins have demonstrated sustained peg stability at greater scale and market conditions are more favorable."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
