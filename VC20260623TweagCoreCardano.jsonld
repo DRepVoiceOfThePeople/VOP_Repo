@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "This is the critical path to Peras on mainnet. Faster finality (~2 min vs ~12 min today) is not a nice-to-have — it is a prerequisite for Cardano to be competitive as a settlement layer for high-value applications.\n\nTweag has been on the Cardano consensus team since January 2018. They built Ouroboros Genesis. They co-designed Peras. There is no team better positioned to carry this across the finish line.\n\nThe three work packages are correctly structured as a single pipeline: Peras v1 cannot go to mainnet without the conformance testing scaffolding that validates it under adversarial conditions. Leios cannot scale sustainably without History Expiry protecting SPO economics. Separating them would increase delivery risk, not reduce it.\n\nHistory Expiry deserves specific mention: at 100–1000 TPS under Leios, full-history storage requirements would grow ~1GB/hour. Without this work, running a node becomes economically prohibitive for smaller SPOs, directly threatening decentralization. This is infrastructure that protects the network's security model, not just its performance.\n\nTrack record: ₳11M previously allocated, delivery documented. $176/hour for senior Cardano infrastructure engineers at a conservative 0.25 ADA/USD conversion is a defensible rate for this class of work.\n\nThis is exactly the kind of treasury spend the treasury exists for."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
