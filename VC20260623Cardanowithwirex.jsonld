@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Wirex is not a speculative build. It is an existing, regulated payments business with 7 million users, $20 billion in processed volume, and Visa Principal Member status. The infrastructure being funded — smart contract settlement, account abstraction, stablecoin-connected banking rails, and Visa card issuance linked to on-chain balances — is open-source and reusable by any wallet or fintech building on Cardano. That is the right model: a proven executor delivering shared infrastructure, not a proprietary product capturing ecosystem value.\n\nReal-world payment rails are a legitimate gap in Cardano's stack, and this proposal fills it with a team that has already shipped at scale elsewhere.\n\nHowever, this proposal is notably thin on milestone detail compared to the standard set by other proposals in this cycle. I am voting Yes on the strength of Wirex's track record and the open-source commitment. If a future proposal from this team — or any team — arrives through the Intersect budget process with this level of detail and no independently structured milestones and acceptance criteria, my vote will be No regardless of the executor's reputation."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
